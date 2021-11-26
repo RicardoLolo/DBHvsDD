@@ -1,0 +1,32 @@
+#canvas {
+    background-image: url("123.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid #333;
+}
+
+/*#DBH {*/
+/*    position: relative;*/
+/*    top: 150px;*/
+
+/*}*/
+/*.animate{*/
+/*    animation: jump 500ms infinite ;}*/
+
+/*@keyframes jump {*/
+/*    0%{top: 150px;}*/
+/*    30%{top: 100px;}*/
+/*    70%{top: 100px;}*/
+/*    100%{top: 150px;}*/
+
+/*}*/
+/*#RC{*/
+/*    position: relative;*/
+/*    top: 130px;*/
+/*    left: 480px;*/
+/*    animation: RC infinite linear;*/
+/*}*/
+/*@keyframes RC {*/
+/*    0%{left: 480px;}*/
+/*    100%{left: -40px;}*/
+/*}*/
