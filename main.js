@@ -25,12 +25,12 @@ function start() {
         }
         if (dbh.y + dbh.height-7 >= rc[i].y &&
             dbh.x + dbh.width-7 >= rc[i].x && rc[i].x + rc[i].width >= dbh.x) {
-            // music.pause() ;
-            // alert("né nữa đi bạn êi");
-            // alert("né tđn được :)");
-            // alert("xin");
-            // alert(" vĩnh biệt cụ Hào");
-            // return
+            music.pause() ;
+            alert("né nữa đi bạn êi");
+            alert("né tđn được :)");
+            alert("xin");
+            alert(" vĩnh biệt cụ Hào");
+            return
         }
         if (rc[i].x === dbh.x - rc[i].width) {
             score++;
