@@ -29,6 +29,9 @@ class RC {
         if(score> 20){
             this.x -= 20
         }
+        if (score>30){
+            this.x -=40
+        }
     }
 }
 
