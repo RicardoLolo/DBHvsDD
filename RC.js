@@ -22,6 +22,13 @@ class RC {
 
     moveLeft() {
         this.x -= 5;
+        if (score>10){
+            this.x -= 10
+
+        }
+        if(score> 20){
+            this.x -= 20
+        }
     }
 }
 
