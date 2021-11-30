@@ -15,7 +15,7 @@ function start() {
     // dbh.drawDBH()
     dbh.drawDBH();
     dbh.moveDown();
-
+    //check va chạm của 2 huynh đệ
     for (let i = 0; i < rc.length; i++) {
         rc[i].drawRC();
         rc[i].moveLeft();
@@ -32,10 +32,12 @@ function start() {
             alert(" vĩnh biệt cụ Hào");
             return
         }
+        //tính điểm
         if (rc[i].x === dbh.x - rc[i].width) {
             score++;
         }
     }
+    //vẽ dòng tính điểm
     ctx.fillStyle = "#090909";
     ctx.font = "24px Dancing Script";
     ctx.fillText("Score : " + score, 730, cvs.height - 550);
@@ -43,16 +45,9 @@ function start() {
     checkHighScore()
 
 
-    for (let j = 0; j < sessionStorage.length; j++) {
-        if (sessionStorage['high_score' + (sessionStorage.length - 1)] < score) {
-            highScore = score;
-            sessionStorage.setItem('high_score' + (j + 1), highScore)
-        }
-    }
-    // }
     requestAnimationFrame(start);
 }
-//
+    //tính điểm cao nhất
 function checkHighScore() {
     for (let j = 0; j < sessionStorage.length; j++) {
         if (sessionStorage['high_score' + (sessionStorage.length - 1)] < score) {

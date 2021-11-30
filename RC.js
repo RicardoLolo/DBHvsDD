@@ -10,7 +10,7 @@ class RC {
         this.width = 100;
         this.height = 70;
     }
-
+    //vẽ đối đượng Rào cản( đức đậu)
     drawRC() {
         if (score>5){
             this.height = 100
@@ -19,7 +19,7 @@ class RC {
         }
         ctx.drawImage(document.getElementById("RC"), this.x, this.y, this.width, this.height);
     }
-
+    //xử lý hành vi lao tới Đường Bá Hào
     moveLeft() {
         this.x -= 5;
         if (score>10){
